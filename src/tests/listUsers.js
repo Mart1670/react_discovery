@@ -1,9 +1,11 @@
 import users from "./users.js"
+import Banner from "./banner.js"
+
 
 const listUsers = users.map((user) => 
     <>
         <div className = "each-profile">
-            <div className = "profile-banner"></div>
+            <Banner props={user}/>
             <img
                 className="avatar" 
                 src={user.imageUrl}
@@ -20,12 +22,10 @@ const listUsers = users.map((user) =>
     </>
 );
 
-export default function Profile(){
+export default function ListUsers(){
     return (
         <>
-            <div className = "profiles">
-                {listUsers}
-            </div>
+            {listUsers}
         </>
     )
 };

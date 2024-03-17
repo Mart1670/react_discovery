@@ -1,4 +1,4 @@
-import Profile from "./user.js"
+import Profile from "./profile.js"
 
 function AboutPage() {
     return(

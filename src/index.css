@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities; */
 
+*{
+  /* box-sizing: border-box; */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -25,11 +29,16 @@ p{
 }
 
 .profiles{
+  /* align-items: flex-start; */
+  height: fit-content;
+}
+
+.sub-profiles{
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
-  max-width: 90%;
   flex-wrap: wrap;
+  max-width: 90%;
   margin-inline: auto;
   margin-block: 10px;
 }
@@ -59,4 +68,17 @@ p{
 
 .each-profile:hover{
   cursor: pointer;
+}
+
+.current-user{
+  background-color: rgb(255, 208, 54);
+}
+
+.hidden-content{
+  /* background-color: aliceblue; */
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: 0;
+  backdrop-filter: blur(5px);
 }

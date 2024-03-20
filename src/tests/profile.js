@@ -10,15 +10,16 @@ function Profile () {
                 <ListUsers />
             </div>
     } else {
-        content = <>
-            <div className = "hidden-content"></div>
-            <div className = "sub-profiles">
-                <ListUsers />
-            </div>
-        </>
+        content = 
+            <>
+                <div className = "hidden-content"></div>
+                <div className = "sub-profiles">
+                    <ListUsers />
+                </div>
+            </>
     }
     return (
-        <div className = "profiles" id="profiles">
+        <div id="profiles">
             {content}
         </div>
     )

@@ -1,7 +1,7 @@
 let content;
 
 function Banner (user) {
-    if(user.id == 12) {
+    if(user.id === "12") {
         content = <div className = "profile-banner current-user"></div>
     } else {
         content = <div className = "profile-banner"></div>

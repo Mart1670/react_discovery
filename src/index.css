@@ -13,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
@@ -28,9 +29,9 @@ p{
   margin: 0px;
 }
 
-.profiles{
+#profiles{
   /* align-items: flex-start; */
-  height: fit-content;
+  position: relative;
 }
 
 .sub-profiles{
@@ -76,9 +77,9 @@ p{
 
 .hidden-content{
   /* background-color: aliceblue; */
-  position: absolute;
+  position:absolute;
   width: 100%;
   height:100%;
-  z-index: 0;
+  /* z-index: 1; */
   backdrop-filter: blur(5px);
 }

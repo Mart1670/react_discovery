@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities; */
 
-*{
-  /* box-sizing: border-box; */
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -30,7 +26,6 @@ p{
 }
 
 #profiles{
-  /* align-items: flex-start; */
   position: relative;
 }
 
@@ -45,7 +40,7 @@ p{
 }
 
 .profile-banner{
-  background-color: #282c34;
+  
   height: 50px;
   display: block;
   width: 100%;
@@ -71,15 +66,16 @@ p{
   cursor: pointer;
 }
 
+.other-users{
+  background-color: #282c34;
+}
 .current-user{
   background-color: rgb(255, 208, 54);
 }
 
 .hidden-content{
-  /* background-color: aliceblue; */
   position:absolute;
   width: 100%;
   height:100%;
-  /* z-index: 1; */
   backdrop-filter: blur(5px);
 }

@@ -4,7 +4,7 @@ import Banner from "./banner.js"
 
 const community = users.map(user => 
     <>
-        <div className = "each-profile">
+        <div key={user._id} className = "each-profile">
             <Banner props={user}/>
             <img
                 className="avatar" 

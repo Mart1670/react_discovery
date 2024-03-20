@@ -90,21 +90,21 @@ const users = [{
     imageSize: 90
 },
 {   
-    id: 13,
+    id: 14,
     name: "SuperNerdie",
     activity: "Stud",
     imageUrl: "profilePics/super-nerd.JPG",
     imageSize: 90
 },
 {   
-    id: 14,
+    id: 15,
     name: "caro",
     activity: "Travel influencer",
     imageUrl: "profilePics/voyager-carol.JPG",
     imageSize: 90
 },
 {   
-    id: 15,
+    id: 16,
     name: "Robert Girard",
     activity: "CEO",
     imageUrl: "profilePics/robert.JPG",

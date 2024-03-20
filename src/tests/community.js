@@ -2,7 +2,7 @@ import users from "./users.js"
 import Banner from "./banner.js"
 
 
-const listUsers = users.map((user) => 
+const community = users.map(user => 
     <>
         <div className = "each-profile">
             <Banner props={user}/>
@@ -22,10 +22,10 @@ const listUsers = users.map((user) =>
     </>
 );
 
-export default function ListUsers(){
+export default function Community(){
     return (
         <>
-            {listUsers}
+            {community}
         </>
     )
 };

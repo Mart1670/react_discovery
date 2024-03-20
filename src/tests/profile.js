@@ -1,4 +1,4 @@
-import ListUsers from "./listUsers.js"
+import Community from "./community.js"
 
 let content;
 let isLoggedIn = false;
@@ -7,14 +7,14 @@ function Profile () {
     if (isLoggedIn){
         content = 
             <div className = "sub-profiles">
-                <ListUsers />
+                <Community />
             </div>
     } else {
         content = 
             <>
                 <div className = "hidden-content"></div>
                 <div className = "sub-profiles">
-                    <ListUsers />
+                    <Community />
                 </div>
             </>
     }

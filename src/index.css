@@ -25,6 +25,75 @@ p{
   margin: 0px;
 }
 
+#user{
+  width: 90px;
+  height: 90px;
+  color: #aeaeae;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#user-list{
+  height: 150px;
+  scroll-behavior: smooth;
+  overflow-y:scroll;
+  padding-inline: 5px;
+  background-color: #aeaeae;
+  /* border-radius: 20px; */
+  position: absolute;
+}
+
+#user-list::-webkit-scrollbar{
+  width: 5px;
+}
+
+#user-list::-webkit-scrollbar-track{
+  background: white;
+  border-radius: 10px;
+}
+
+#user-list::-webkit-scrollbar-thumb{
+  background:#282c34;
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#user-list>div{
+  display: flex;
+  align-items: center;
+  margin-block: 5px;
+  background-color: white;
+  border-radius: 50px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#user-list>div:hover{
+  background-color:#4b525f;
+  color: white;
+  transition: 0.3s;
+}
+
+#user-list>div>img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50% 00% 0% 50%;
+  object-fit: cover;
+}
+
+#user-list>div>p{
+  margin-inline: 10px;
+  font-size: 15px;
+  color: #282c34;
+}
+
+#user-list>div:hover>p{
+  color: white;
+  transition: 0.3s;
+}
+
 #profiles{
   position: relative;
 }
@@ -37,6 +106,10 @@ p{
   max-width: 90%;
   margin-inline: auto;
   margin-block: 10px;
+}
+
+.avatar{
+  object-fit: cover;
 }
 
 .profile-banner{

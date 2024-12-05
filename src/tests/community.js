@@ -12,8 +12,7 @@ const community = users.map(user =>
                 alt={user.name}
                 style = {{
                     width: user.imageSize,
-                    height: user.imageSize,
-                    objectFit: 'cover'
+                    height: user.imageSize
                 }}
             />
             <h2>{user.name}</h2>
